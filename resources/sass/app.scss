@@ -1,0 +1,33 @@
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.form-control{
+  font-size: 1rem;
+}
+::placeholder {
+  color: $gray-300 !important;
+}
+
+  .preview-container {
+    margin: 0 !important;
+  }
+
+  .picture-preview {
+    @extend .img-thumbnail
+  }
+@include media-breakpoint-down(sm) {
+  .no-px{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+
